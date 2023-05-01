@@ -9,9 +9,8 @@ function formSubmit (e) {
     const email = formElements.email.value;
     const password = formElements.password.value;
 
-console.log(e.currentTarget.elements)
     if (email === `` || password === ``) {
-        alert("All fields should be filled");
+       return alert("All fields should be filled");
     }
     else { 
         const correctInputData = {
@@ -24,6 +23,5 @@ console.log(e.currentTarget.elements)
        alert (correctInput);        
     }
     
-    console.log(form.elements);
-form.reset();
+
 };
